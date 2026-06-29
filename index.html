@@ -626,15 +626,15 @@
 //  Get these from emailjs.com → Account & Email Services
 // ============================================================
 
-const EMAILJS_SERVICE_ID  = 'service_n2nrlcq';
+const EMAILJS_SERVICE_ID  = 'PASTE_SERVICE_ID_HERE';
 //     ↑ Example: 'service_abc123'
 //     Found at: emailjs.com → Email Services → your service
 
-const EMAILJS_TEMPLATE_ID = 'template_pjb5lzu';
+const EMAILJS_TEMPLATE_ID = 'PASTE_TEMPLATE_ID_HERE';
 //     ↑ Example: 'template_xyz789'
 //     Found at: emailjs.com → Email Templates → your template
 
-const EMAILJS_PUBLIC_KEY  = 'R7vNNdEhkUth9Of0n';
+const EMAILJS_PUBLIC_KEY  = 'PASTE_PUBLIC_KEY_HERE';
 //     ↑ Example: 'AbCdEfGhIjKlMnOp'
 //     Found at: emailjs.com → Account → API Keys
 
@@ -661,12 +661,20 @@ let currentCoach  = null;
 let clients       = JSON.parse(localStorage.getItem('mg_clients') || '[]');
 let selectedClient = null;
 
-// Pre-load some sample clients if empty
+// Pre-load clients if empty
 if (clients.length === 0) {
   clients = [
-    { id: 1, name: 'Tina Johnson',  email: 'tina@example.com',  phone: '(713) 555-0101', goal: 'Weight Loss' },
-    { id: 2, name: 'Marcus Webb',   email: 'marcus@example.com', phone: '(281) 555-0202', goal: 'Muscle Gain' },
-    { id: 3, name: 'Keisha Brown',  email: 'keisha@example.com', phone: '(832) 555-0303', goal: 'Overall Health' },
+    { id: 1, name: 'Carlesha Powell',  email: 'Carlesha_06@yahoo.com',   phone: '(832) 718-4050', goal: 'Weight Loss' },
+    { id: 2, name: 'Teresa Lyons',     email: 'Lyonsteresa70@gmail.com',  phone: '(312) 217-4059', goal: 'Weight Loss' },
+    { id: 3, name: 'Sarah Koller',     email: 'sarah.koller16@gmail.com', phone: '(262) 844-6541', goal: 'Weight Loss' },
+    { id: 4, name: 'Rachel Joseph',    email: 'r.joseph3184@gmail.com',   phone: '(806) 438-7754', goal: 'Weight Loss' },
+    { id: 5, name: 'Chelisa Merrick',  email: 'Cdmerrick2010@gmail.com',  phone: '(409) 790-8361', goal: 'Weight Loss' },
+    { id: 6, name: 'Kam Sowell',       email: 'Kamarionsowell@gmail.com', phone: '(281) 995-7568', goal: 'Weight Loss' },
+    { id: 7, name: 'Joycelyn Johnson', email: 'Joyjohnson656@gmail.com',  phone: '(832) 746-2853', goal: 'Weight Loss' },
+    { id: 8, name: 'Erin Simpson',     email: 'esimpson200012@gmail.com', phone: '(832) 472-8313', goal: 'Weight Loss' },
+    { id: 9,  name: 'Shaunna Sterling', email: 'sboclair315@gmail.com',    phone: '(281) 610-4694', goal: 'Weight Loss' },
+    { id: 10, name: 'Chris Green',       email: 'chrisgreen1323@gmail.com', phone: '(832) 876-4685', goal: 'Muscle Gain' },
+    { id: 11, name: 'Milton Green',      email: 'meangreennorth@gmail.com', phone: '(713) 894-9748', goal: 'Muscle Gain' },
   ];
   saveClients();
 }
